@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Rubik:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+h2{
+    color:white;
+    font-family: 'Babylonica', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+
+
+    
+}
+nav{
+    background-color:rgb(36, 57, 94);
+
+    height: 80px;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+}
+.Gamecontainer{
+    
+    display:flex;
+    justify-content: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    flex-wrap: wrap;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family:'Babylonica', cursive;
+    font-family: 'Rubik', sans-serif; 
+}
+.box{
+    border: 2px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(183, 185, 187);
+}
+.info{
+    padding:0 34px;
+}
+.imgbox img{
+    width: 0;
+    transition: widh1s ease-in-out;
+    margin-top: 1vw;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.btn{
+    background-color: rgb(16, 168, 26);
+    color:white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top:1vw;
+}
+.superviser{
+    font-size: 1.5rem;
+
+
+}
+@media screen and (max-width: 700px)
+{
+    .Gamecontainer{
+        flex-wrap: wrap;
+    }
+    .info{
+        margin-top: 30px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+        font-family:'Babylonica', cursive;
+        font-family: 'Rubik', sans-serif; 
+    }
+    .box{
+        border: 2px solid black;
+        font-size: 5vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+    .br-0{
+        border-right: 0;
+    }
+    .bl-0{
+        border-left:0;
+    }
+    .bt-0{
+        border-top:0;
+    }
+    .bb-0{
+        border-bottom: 0;
+    }
+    .boxtext{
+        padding-top: 1vw;
+        font-size: 1.5rem;
+    }
+}
